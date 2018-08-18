@@ -17,7 +17,7 @@ using namespace std;
  */
 class HeapPriorityQueue {
 public:
-    HeapPriorityQueue(int binSize = 10);
+    HeapPriorityQueue(int binSize = 1);
     ~HeapPriorityQueue();
     void changePriority(string value, int newPriority);
     void clear();
@@ -33,6 +33,9 @@ private:
     int binSize;
     int fillPoint;
     PQEntry* binHeap;
+    void bubbleUp(int curPos);
+    void bubbleDown(int curPos);
+    void PQEntrySwap(int pos1,int pos2);
 
 };
 

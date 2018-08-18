@@ -1,0 +1,2 @@
+* What to initialise the binHeap to? PQEntry instances with default values? Or,
+is it possible to init to NULL?
